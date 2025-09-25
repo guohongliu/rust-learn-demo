@@ -4,3 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+sha2 = "0.10"
+chrono = { version = "0.4", features = ["clock"] }
+
+[[bench]]
+name = "criterion_bench"
+harness = false  # 必须设置为 false
